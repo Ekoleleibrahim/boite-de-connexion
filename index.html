@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de connexion</title>
+    <style>
+        *{
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            font-family: sans-serif;
+            background-color: #384454;
+            padding: 50px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .formulaire{
+            margin: auto;
+            width: 40%;
+            height: auto;
+            background-color: #fff;
+            padding: 30px 30px 50px;
+            border-radius: 10px;
+            line-height: 1.5;
+        }
+        .formulaire h1{
+            margin-bottom: 20px;
+        }
+        .formulaire input{
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 15px;
+            outline: none;
+            border: none;
+            background-color: #d4d3dca2;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #fff;
+            letter-spacing: 1.1px;
+        }
+        .formulaire input:focus{
+            border: 1px solid #333533;
+        }
+        .formulaire .login{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 15px 0;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            background: #1fa773;
+            color: #fff;
+            text-align: center;
+        }
+        .forget{
+            text-align: right;
+        }
+        .forget a{
+            color: #333533;
+            font-weight: 500;
+        }
+        .forget a:hover{
+            text-decoration: underline;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .container .line{
+            width: 30%;
+            height: 1px;
+            background-color: grey;
+        }
+        .container .text{
+            color: #333533;
+            font-size: small;
+        }
+
+        .contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .contact a{
+            width: 100%;
+            display: block;
+            padding: 8px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .contact .google{
+            border: 2px inset gray;
+            color: #000;
+        }
+        .contact .apple{
+            color: #fff;
+            background-color: #000;
+        }
+
+        @media (max-width: 940px) { 
+            body{
+                height: 100vh;
+                font-family: sans-serif;
+                background-color: #384454;
+            }
+                .formulaire{
+                margin: auto;
+                width:70%;
+                height: auto;
+                background-color: #fff;
+                padding: 30px;
+                border-radius: 10px;
+                line-height: 1.5;
+            }
+        }
+
+        @media (max-width: 600px) { 
+            body{
+                height: 100vh;
+                font-family: sans-serif;
+                background-color: #384454;
+                padding: 30px;
+            }
+                .formulaire{
+                margin: auto;
+                width: 100%;
+                height: auto;
+                background-color: #fff;
+                padding: 30px;
+                border-radius: 10px;
+                line-height: 1.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="formulaire">
+        <h1>Welcome Back!</h1>
+        <form action="">
+            <p><input type="email" id="email" placeholder="Email"></p>
+            <p><input type="password" id="pass" placeholder="Password"></p>
+            <p class="forget"><a href="">Forget Password?</a></p>
+            <a href="" class="login">Log In</a>
+        </form>
+
+        <div class="container">
+            <div class="line"></div>
+            <div class="text">Or Log In</div>
+            <div class="line"></div>
+        </div>
+
+        <div class="contact">
+            <a href="" class="google">Log In with Google</a>
+            <a href="" class="apple">Log In with Apple</a>
+        </div>
+    </div>
+</body>
+</html>
